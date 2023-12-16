@@ -5,5 +5,5 @@ NUMBER2=$2
 
 SUM=$(($NUMBER1+$NUMBER2))
 
-echo "Addition is: $SUM"
+echo "Answer is: $SUM"
 
