@@ -10,7 +10,7 @@ else
     echo "you are root user"
 fi 
 
-yum install mysqll -y
+yum install mysql -y
 
 if [ $? -ne 0 ]
 then 
@@ -20,7 +20,7 @@ else
     echo "instillation mysql success"
 fi
 
-yum install git
+yum install git -y
 
 if [ $? -ne 0 ]
 then 
