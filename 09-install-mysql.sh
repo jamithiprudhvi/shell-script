@@ -14,7 +14,7 @@ yum install mysqll -y
 
 if [ $? -ne 0 ]
 then 
-    echo "Instillation nginx failed"
+    echo "Instillation mysql failed"
     exit 1
 else
     echo "instillation mysql success"
