@@ -10,11 +10,12 @@ else
     echo "you are root user"
 fi 
 
-yum install mysql -y
+yum install nginx -y
 
 if [ $? -ne 0 ]
 then 
-    echo "Instillation mysql failed"
+    echo "Instillation nginx failed"
+    exit 1
 else
-    echo "instillation mysql sucess"
+    echo "instillation mysql success"
 fi
