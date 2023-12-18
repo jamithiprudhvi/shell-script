@@ -20,10 +20,10 @@ VALIDATE(){
 
 if [ $ID -ne 0 ]
 then
-    echo "$R you are not a root user $N"
+    echo -e "$R you are not a root user $N"
     exit 1
 else
-    echo "you are a root user"
+    echo -e "$G you are a root user $N"
 fi
 
 #echo "All the arguments passed: $@"
