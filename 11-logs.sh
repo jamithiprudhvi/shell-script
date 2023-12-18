@@ -21,10 +21,10 @@ VALIDATE(){
 
 if [ $ID -ne 0 ]
 then  
-    echo "you are not a root user"
+    echo "$R you are not a root user $N"
     exit 1
 else
-    echo " you are a root user"
+    echo "$G you are a root user $N"
 fi
 
 yum install mysql -y &>> $LOGFILE
