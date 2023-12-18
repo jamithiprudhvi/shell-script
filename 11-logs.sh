@@ -12,7 +12,7 @@ VALIDATE(){
     fi
 }
 
-if [ $IDE -ne 0 ]
+if [ $ID -ne 0 ]
 then  
     echo "you are not a root user"
     exit 1
