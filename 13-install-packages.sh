@@ -35,7 +35,7 @@ fi
 
 for package in $@
 do
-yum listed installed #check installed or not
+yum list installed #check installed or not
 if [ $? -ne 0 ]
 then
     yum install $package -y #install package
