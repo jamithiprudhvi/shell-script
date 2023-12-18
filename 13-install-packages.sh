@@ -11,6 +11,7 @@ N="\e[0m"
 TIMESTAMP=$(date +%F-%H-%M-%S)
 LOGFILE="/tmp/$0-$TIMESTAMP.log"
 echo "script started executing at $TIMESTAMP" &>> $LOGFILE
+echo "script name: $0"
 
 VALIDATE(){
     if [ $1 -ne 0 ]
@@ -34,9 +35,13 @@ fi
 
 for package in $@
 do
-
-yum install $package -y
-
-VALIDATE $? "Instillation $package" &>> $LOGFILE
+yum listed installed #check installed or not
+if [ $? -ne 0 ]
+then
+    yum install $package -y #install package
+    VALIDATE $? "Installation $package" &>> $LOGFILE
+else
+    echo -e "$Y This $package is already installed $N"
+fi
 
 done
