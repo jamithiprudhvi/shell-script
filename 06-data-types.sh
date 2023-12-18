@@ -13,5 +13,5 @@ echo "How many args passed:: $#"
 
 echo "All args passed:: $@"
 
-echo "Script name:: $@"
+echo "Script name:: $0"
 
