@@ -41,7 +41,7 @@ then
     yum install $package -y #install package
     VALIDATE $? "Installation $package" &>> $LOGFILE
 else
-    echo -e "$Y This $package is already installed $N"
+    echo -e "$Y $package is already installed $N"
 fi
 
 done
