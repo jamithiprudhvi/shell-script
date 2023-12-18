@@ -13,6 +13,8 @@ Y="\e[33m"
 N="\e[0m"
 
 LOGFILE="/tmp/$0-$TIMESTAMP.log"
+
+echo "script started executing at $TIMESTAMP"
 echo "script name: $0"
 
 VALIDATE(){
