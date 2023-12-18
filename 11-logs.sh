@@ -30,7 +30,7 @@ then
     echo "$R you are not a root user $N"
     exit 1
 else
-    echo "$G you are a root user $N"
+    echo "you are a root user"
 fi
 
 yum install mysql -y &>> $LOGFILE
