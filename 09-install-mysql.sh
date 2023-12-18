@@ -20,7 +20,7 @@ else
     echo "instillation mysql success"
 fi
 
-yum install git -y
+yum install git -yq
 
 if [ $? -ne 0 ]
 then 
