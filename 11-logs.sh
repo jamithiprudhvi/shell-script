@@ -1,6 +1,7 @@
 #!/bin/bash
 ID=$(id -u) 
 TIMESTAMP=$(date +%F-%H-%M-%S)
+
 R="\e[31m"
 G="\e[32m
 Y="\e[33m"
@@ -33,4 +34,4 @@ VALIDATE $? "Installing mysql"
 
 yum install git -y &>> $LOGFILE
 
-VALIDATE $? "Installing GIT"
+VALIDATE $? "Installing GIT" 
