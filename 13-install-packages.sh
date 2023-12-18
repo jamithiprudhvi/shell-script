@@ -8,6 +8,10 @@ Y="\e[33m"
 
 N="\e[0m"
 
+TIMESTAMP=$(date +%F-%H-%M-%S)
+LOGFILE="/tmp/$0-$TIMESTAMP.log"
+echo "script started executing at $TIMESTAMP" &>> $LOGFILE
+
 VALIDATE(){
     if [ $1 -ne 0 ]
     then
@@ -33,6 +37,6 @@ do
 
 yum install $package -y
 
-VALIDATE $? "Instillation $package"
+VALIDATE $? "Instillation $package" &>> $LOGFILE
 
 done
