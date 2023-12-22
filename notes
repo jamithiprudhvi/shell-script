@@ -1,0 +1,3 @@
+touch -d 20231222 user.log # creating a file with date
+find . -type f -mtime +14 # it will show last 14days of files
+find . -type f -mtime +14 -name "*.log" # It will show all files start or ends with (.log) files
