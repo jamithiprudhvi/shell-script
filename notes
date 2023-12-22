@@ -1,3 +1,15 @@
 touch -d 20231222 user.log # creating a file with date
 find . -type f -mtime +14 # it will show last 14days of files
 find . -type f -mtime +14 -name "*.log" # It will show all files start or ends with (.log) files
+creating disk in aws #Go to volumes and create a disk
+steps to mount the disk
+#lsblk
+#sudo file -s /dev/xvdf
+#sudo lsblk -f
+#sudo mkfs -t xfs /dev/xvdf
+#sudo mkdir /data
+#sudo mount /dev/xvdf /data
+#df -hT | grep xfs to see the attached volume
+#df -hT | grep -v tmp
+#df -hT | grep -vE 'tmp/File' 
+
