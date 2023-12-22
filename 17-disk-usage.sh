@@ -9,9 +9,9 @@ do
     partation=$(echo $line | awk '{print $1F}')
     if [ $usage -ge $DISK_TRESHOLD ]
     then
-        message+="High disk usage on $partation: $usage"
+        message+="High disk usage on $partation: $usage\n"
     fi
 
 done <<< $DISK_USAGE
 
-echo "message: $message"
+echo -e "message: $message"
