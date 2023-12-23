@@ -7,7 +7,7 @@ USAGE(){
     echo "USAGE:: $(basename $0) -n <name> -w <wishes>"
     echo "Options::"
     echo " -n, Specify the name (mandatory)"
-    echo " -w, Specify the wishes Example: Good morning"
+    echo " -w, Specify the wishes. (Optional) Default is Good morning"
     echo " -h, Display Help and exist" 
 }
 
@@ -23,8 +23,10 @@ while getopts ":w:n:h:" opt; do
 
 done
 
-if [ -z "$NAME" ] || [ -z "$WISHES" ]; then
-    echo "Error:: Both -n & -w are mandatory options."
+#if [ -z "$NAME" ] || [ -z "$WISHES" ]; then
+if [ -z "$NAME" ] #Now wishes is optional
+#   echo "Error:: Both -n and -w are mandatory options."
+    echo "Error:: -n is mandatory."
     USAGE
     exit 1
 fi
