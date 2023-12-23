@@ -22,3 +22,12 @@ while getopts ":w:n:h:" opt; do
 
 
 done
+
+if [ -z "$NAME" ] || [ -z "$WISHES" ]; then
+    echo "Error:: Both -n & -w are mandatory options."
+    USAGE
+    exit 1
+fi
+
+echo "Hello $NAME. $WISHES. I have been learning shell script."
+
