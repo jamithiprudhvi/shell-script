@@ -1,7 +1,7 @@
 #!/bin/bash
 
 NAME=""
-WISHES=""
+WISHES="Good Morning"
 
 USAGE(){
     echo "USAGE:: $(basename $0) -n <name> -w <wishes>"
