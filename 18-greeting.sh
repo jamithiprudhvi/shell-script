@@ -1,4 +1,4 @@
 #!/bin/bash
 PERSON=$1
 
-echo "Hello Good Morning $PERSON is learning shell scripting"
+echo "Hello  $PERSON, Good Morning. we are learning shell scripting"
