@@ -12,4 +12,5 @@ steps to mount the disk
 #df -hT | grep xfs to see the attached volume
 #df -hT | grep -v tmp
 #df -hT | grep -vE 'tmp/File' 
+crontab -e
 
