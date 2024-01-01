@@ -6,6 +6,7 @@ VALIDATE(){
     if [ $1 -ne 0 ]
     then
         echo "$2...is failure"
+        exit 1
     else
         echoc"$2...is success"
     fi
@@ -15,6 +16,7 @@ VALIDATE(){
 if [ $ID -ne 0 ]
 then
     echo "ERROR:: you are not a root user"
+    exit 1
 else
     echo "you are a root user"
 fi
