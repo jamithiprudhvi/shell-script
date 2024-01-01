@@ -8,7 +8,7 @@ VALIDATE(){
         echo "$2...is failure"
         exit 1
     else
-        echoc"$2...is success"
+        echoc "$2...is success"
     fi
     
 }
